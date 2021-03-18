@@ -2,7 +2,31 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(page2());
+  runApp(page1());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Main '),
+        ),
+        body: Center(
+          child: ElevatedButton(
+            child: Text('Page 1'),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => page2()),
+              );
+            },
+          ),
+        ),
+      ),
+    );
+  }
 }
 
 class page1 extends StatelessWidget {
