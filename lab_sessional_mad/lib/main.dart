@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(page1());
+  runApp(page2());
 }
 
 class MyApp extends StatelessWidget {
@@ -377,8 +377,7 @@ class page2 extends StatelessWidget {
           backgroundColor: Colors.grey[900],
           leading: IconButton(icon: Icon(Icons.arrow_left), onPressed: () {}),
           actions: <Widget>[
-            IconButton(icon: Icon(Icons.notifications), onPressed: () {}),
-            IconButton(icon: Icon(Icons.search), onPressed: () {}),
+            IconButton(icon: Icon(Icons.menu), onPressed: () {}),
           ],
         ),
         body: SafeArea(
@@ -437,15 +436,23 @@ class page2 extends StatelessWidget {
                 ],
               ),
               TextField(
+                style: TextStyle(color: Colors.red),
                 obscureText: true,
                 decoration: InputDecoration(
+                  enabledBorder: UnderlineInputBorder(
+                    borderSide: BorderSide(color: Colors.white),
+                  ),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.all(
                       Radius.circular(1000.0),
                     ),
                   ),
-                  prefixIcon: Icon(Icons.search),
+                  prefixIcon: new Icon(
+                    Icons.search,
+                    color: Colors.white,
+                  ),
                   labelText: 'Search peoples',
+                  labelStyle: TextStyle(color: Colors.white),
                   fillColor: Colors.grey[900],
                 ),
               ),
@@ -456,78 +463,169 @@ class page2 extends StatelessWidget {
                   color: Colors.white,
                 ),
               ),
+              Row(
+                children: <Widget>[
+                  Column(
+                    children: <Widget>[
+                      IconButton(
+                          icon: Icon(Icons.supervised_user_circle_outlined),
+                          color: Colors.white,
+                          iconSize: 30.0,
+                          onPressed: () {}),
+                    ],
+                  ),
+                  Expanded(
+                    child: Column(
+                      children: <Widget>[
+                        Row(
+                          children: <Widget>[
+                            Text(
+                              'Bilal',
+                              style: TextStyle(
+                                  color: Colors.white, fontSize: 30.0),
+                            ),
+                          ],
+                        ),
+                        Row(
+                          children: <Widget>[
+                            Text(
+                              '30 minutes ago',
+                              style: TextStyle(color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(
+                width: 450.0,
+                height: 20.0,
+                child: Divider(
+                  color: Colors.white,
+                ),
+              ),
+              Row(
+                children: <Widget>[
+                  Column(
+                    children: <Widget>[
+                      IconButton(
+                          icon: Icon(Icons.supervised_user_circle_outlined),
+                          color: Colors.white,
+                          iconSize: 30.0,
+                          onPressed: () {}),
+                    ],
+                  ),
+                  Expanded(
+                    child: Column(
+                      children: <Widget>[
+                        Row(
+                          children: <Widget>[
+                            Text(
+                              'Arslan',
+                              style: TextStyle(
+                                  color: Colors.white, fontSize: 30.0),
+                            ),
+                          ],
+                        ),
+                        Row(
+                          children: <Widget>[
+                            Text(
+                              '1 hour ago',
+                              style: TextStyle(color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(
+                width: 450.0,
+                height: 20.0,
+                child: Divider(
+                  color: Colors.white,
+                ),
+              ),
+              Row(
+                children: <Widget>[
+                  Column(
+                    children: <Widget>[
+                      IconButton(
+                          icon: Icon(Icons.supervised_user_circle_outlined),
+                          color: Colors.white,
+                          iconSize: 30.0,
+                          onPressed: () {}),
+                    ],
+                  ),
+                  Expanded(
+                    child: Column(
+                      children: <Widget>[
+                        Row(
+                          children: <Widget>[
+                            Text(
+                              'Ali',
+                              style: TextStyle(
+                                  color: Colors.white, fontSize: 30.0),
+                            ),
+                          ],
+                        ),
+                        Row(
+                          children: <Widget>[
+                            Text(
+                              '2 hour ago',
+                              style: TextStyle(color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(
+                width: 450.0,
+                height: 20.0,
+                child: Divider(
+                  color: Colors.white,
+                ),
+              ),
               Expanded(
-                child: Container(),
+                child: Container(
+                  color: Colors.black,
+                ),
               ),
               Row(
                 children: <Widget>[
                   Expanded(
-                    child: Ink(
-                      height: 50.0,
-                      decoration: ShapeDecoration(
-                        color: Colors.grey[900],
-                        shape: Border(),
-                      ),
-                      child: IconButton(
-                        icon: Icon(Icons.home_outlined),
-                        color: Colors.white,
-                        onPressed: () {},
-                      ),
-                    ),
-                  ),
-                  Expanded(
-                    child: Ink(
-                      height: 50.0,
-                      decoration: ShapeDecoration(
-                        color: Colors.grey[900],
-                        shape: Border(),
-                      ),
-                      child: IconButton(
-                        icon: Icon(Icons.explore_outlined),
-                        color: Colors.white,
-                        onPressed: () {},
-                      ),
-                    ),
-                  ),
-                  Expanded(
-                    child: Ink(
-                      height: 50.0,
-                      decoration: ShapeDecoration(
-                        color: Colors.grey[900],
-                        shape: Border(),
-                      ),
-                      child: IconButton(
-                        icon: Icon(Icons.add_box_outlined),
-                        color: Colors.white,
-                        onPressed: () {},
-                      ),
-                    ),
-                  ),
-                  Expanded(
-                    child: Ink(
-                      height: 50.0,
-                      decoration: ShapeDecoration(
-                        color: Colors.grey[900],
-                        shape: Border(),
-                      ),
-                      child: IconButton(
-                        icon: Icon(Icons.message_outlined),
-                        color: Colors.white,
-                        onPressed: () {},
-                      ),
-                    ),
-                  ),
-                  Expanded(
-                    child: Ink(
-                      height: 50.0,
-                      decoration: ShapeDecoration(
-                        color: Colors.grey[900],
-                        shape: Border(),
-                      ),
-                      child: IconButton(
-                        icon: Icon(Icons.supervised_user_circle_outlined),
-                        color: Colors.white,
-                        onPressed: () {},
+                    child: TextField(
+                      style: TextStyle(color: Colors.white),
+                      obscureText: true,
+                      decoration: InputDecoration(
+                        enabledBorder: UnderlineInputBorder(
+                          borderSide: BorderSide(color: Colors.white),
+                        ),
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(1000.0),
+                          ),
+                        ),
+                        prefixIcon: new Icon(
+                          Icons.add,
+                          color: Colors.white,
+                        ),
+                        labelText: 'Send Message',
+                        labelStyle: TextStyle(color: Colors.white),
+                        fillColor: Colors.grey[900],
+                        suffixIcon: IconButton(
+                          icon: Icon(
+                            Icons.arrow_right,
+                            color: Colors.white,
+                            size: 50.0,
+                          ),
+                        ),
                       ),
                     ),
                   ),
@@ -536,6 +634,45 @@ class page2 extends StatelessWidget {
             ],
           ),
         ),
+      ),
+    );
+  }
+}
+
+class page3 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        backgroundColor: Colors.black,
+        appBar: AppBar(
+          title: Text(
+            'Mt. Catlin Hotel',
+            style: TextStyle(
+              color: Colors.white,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          backgroundColor: Colors.black,
+          actions: <Widget>[
+            IconButton(icon: Icon(Icons.share), onPressed: () {}),
+            IconButton(
+                icon: Icon(Icons.edit_attributes_outlined), onPressed: () {}),
+          ],
+        ),
+        body: SafeArea(
+            child: Column(
+          children: <Widget>[
+            Row(
+              children: <Widget>[
+                Text('        967-New York',
+                    style: TextStyle(
+                      color: Colors.blueGrey,
+                    )),
+              ],
+            ),
+          ],
+        )),
       ),
     );
   }
