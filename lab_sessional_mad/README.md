@@ -1,5 +1,5 @@
 # Add Screen Here, (Comment By M.Abdullah)
-# Assigned Task,(By Mufassal Hussain)
+# Assigned Task
 ![1](https://user-images.githubusercontent.com/79256743/111803039-7916d480-88f0-11eb-9f26-1c29f7a96401.PNG)
 ![2](https://user-images.githubusercontent.com/79256743/111803075-83d16980-88f0-11eb-8373-d00278016929.PNG)
 ![03](https://user-images.githubusercontent.com/79256743/111803093-89c74a80-88f0-11eb-8733-7584fea96100.PNG)
