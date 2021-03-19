@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(page2());
+  runApp(page3());
 }
 
 class MyApp extends StatelessWidget {
@@ -644,35 +644,272 @@ class page3 extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.white,
         appBar: AppBar(
-          title: Text(
-            'Mt. Catlin Hotel',
-            style: TextStyle(
-              color: Colors.white,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-          backgroundColor: Colors.black,
+          centerTitle: true,
+          backgroundColor: Colors.redAccent,
           actions: <Widget>[
-            IconButton(icon: Icon(Icons.share), onPressed: () {}),
             IconButton(
-                icon: Icon(Icons.edit_attributes_outlined), onPressed: () {}),
+                icon: Icon(Icons.search, color: Colors.black),
+                onPressed: () {}),
+            IconButton(
+                icon: Icon(Icons.share, color: Colors.black), onPressed: () {}),
+            IconButton(
+                icon: Icon(Icons.menu, color: Colors.black), onPressed: () {}),
           ],
         ),
         body: SafeArea(
-            child: Column(
-          children: <Widget>[
-            Row(
-              children: <Widget>[
-                Text('        967-New York',
-                    style: TextStyle(
-                      color: Colors.blueGrey,
-                    )),
-              ],
-            ),
-          ],
-        )),
+          child: Column(
+            children: <Widget>[
+              Row(
+                children: <Widget>[
+                  Expanded(
+                    child: Text(
+                      '  MT.Cateline Hotel',
+                      style: TextStyle(color: Colors.black, fontSize: 30.0),
+                    ),
+                  ),
+                ],
+              ),
+              Row(
+                children: <Widget>[
+                  Expanded(
+                    child: Text(
+                      "        USD:967 - New York",
+                      style: TextStyle(color: Colors.black, fontSize: 10.0),
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(
+                width: 450.0,
+                height: 15.0,
+                child: Divider(
+                  color: Colors.black,
+                ),
+              ),
+              Row(
+                children: <Widget>[
+                  Expanded(
+                    child: Text(
+                      "     About MT. CATLIN",
+                      style: TextStyle(color: Colors.black, fontSize: 15.0),
+                    ),
+                  ),
+                ],
+              ),
+              Row(
+                children: <Widget>[
+                  Expanded(
+                    child: Text(
+                      "      Nunc justo eros. vehicula vef vehicula ut, lancinia a erat,\n      Nam fringilla eros... Nullam aliquam interdum ipsum et \n      tempor. Phasellus odio felis, scelerisque eu purus quis.\n",
+                      style: TextStyle(color: Colors.black, fontSize: 14.0),
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(
+                width: 450.0,
+                height: 15.0,
+                child: Divider(
+                  color: Colors.black,
+                ),
+              ),
+              Row(
+                children: <Widget>[
+                  Expanded(
+                    child: Container(
+                      height: 80.0,
+                      color: Colors.red,
+                      child: Row(
+                        children: <Widget>[
+                          Expanded(
+                            child: Icon(
+                              Icons.wb_sunny,
+                              color: Colors.black,
+                              size: 50.0,
+                            ),
+                          ),
+                          Expanded(
+                            child: Text(
+                              '22* \n sunny',
+                              style: TextStyle(
+                                  color: Colors.black, fontSize: 15.0),
+                            ),
+                          ),
+                          Text(
+                            '8.4',
+                            style:
+                                TextStyle(color: Colors.black, fontSize: 15.0),
+                          ),
+                          Text(
+                            '+6k votes',
+                            style:
+                                TextStyle(color: Colors.black, fontSize: 15.0),
+                          ),
+                          Expanded(
+                            child: Icon(
+                              Icons.arrow_right,
+                              color: Colors.black,
+                              size: 30.0,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(
+                width: 450.0,
+                height: 20.0,
+                child: Divider(
+                  color: Colors.black,
+                ),
+              ),
+              Row(
+                children: <Widget>[
+                  Expanded(
+                    child: Container(
+                      height: 50.0,
+                      color: Colors.red,
+                      child: Row(
+                        children: <Widget>[
+                          Expanded(
+                            child: Ink(
+                              height: 50.0,
+                              decoration: ShapeDecoration(
+                                color: Colors.black,
+                                shape: Border(),
+                              ),
+                              child: IconButton(
+                                icon: Icon(Icons.wifi),
+                                color: Colors.black,
+                                onPressed: () {},
+                              ),
+                            ),
+                          ),
+                          Expanded(
+                            child: Ink(
+                              height: 50.0,
+                              decoration: ShapeDecoration(
+                                color: Colors.black,
+                                shape: Border(),
+                              ),
+                              child: IconButton(
+                                icon: Icon(Icons.local_parking_outlined),
+                                color: Colors.black,
+                                onPressed: () {},
+                              ),
+                            ),
+                          ),
+                          Expanded(
+                            child: Ink(
+                              height: 50.0,
+                              decoration: ShapeDecoration(
+                                color: Colors.black,
+                                shape: Border(),
+                              ),
+                              child: IconButton(
+                                icon: Icon(Icons.battery_unknown_sharp),
+                                color: Colors.black,
+                                onPressed: () {},
+                              ),
+                            ),
+                          ),
+                          Expanded(
+                            child: Ink(
+                              height: 50.0,
+                              decoration: ShapeDecoration(
+                                color: Colors.black,
+                                shape: Border(),
+                              ),
+                              child: IconButton(
+                                icon: Icon(Icons.nights_stay_outlined),
+                                color: Colors.black,
+                                onPressed: () {},
+                              ),
+                            ),
+                          ),
+                          Expanded(
+                            child: Ink(
+                              height: 50.0,
+                              decoration: ShapeDecoration(
+                                color: Colors.black,
+                                shape: Border(),
+                              ),
+                              child: IconButton(
+                                icon: Icon(Icons.admin_panel_settings_outlined),
+                                color: Colors.black,
+                                onPressed: () {},
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(
+                width: 450.0,
+                height: 20.0,
+                child: Divider(
+                  color: Colors.black,
+                ),
+              ),
+              Row(
+                children: <Widget>[
+                  Expanded(
+                    child: Text(
+                      '  Before you go',
+                      style: TextStyle(color: Colors.black, fontSize: 25.0),
+                    ),
+                  ),
+                ],
+              ),
+              Row(
+                children: <Widget>[
+                  Expanded(
+                    child: Text(
+                      "          -Payment at checkout\n          -Wifi is is turned off by 12pm\n          -No Swimming after 10pm\n          -No More then 2 bags\n          -No Singing when Showring\n          -No Refunds",
+                      style: TextStyle(color: Colors.black, fontSize: 15.0),
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(
+                width: 450.0,
+                height: 15.0,
+                child: Divider(
+                  color: Colors.black,
+                ),
+              ),
+              Expanded(
+                child: Container(
+                  color: Colors.white,
+                ),
+              ),
+              FlatButton(
+                child: Text(
+                  'Book a room',
+                  style: TextStyle(fontSize: 20.0),
+                ),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(60.0),
+                  side: BorderSide(
+                    color: Colors.red,
+                  ),
+                ),
+                color: Colors.red,
+                minWidth: 350.0,
+                height: 60.0,
+                textColor: Colors.black,
+                onPressed: () {},
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
