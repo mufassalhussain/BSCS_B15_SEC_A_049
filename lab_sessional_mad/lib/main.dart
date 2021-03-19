@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(page2());
+  runApp(page1());
 }
 
 class MyApp extends StatelessWidget {
@@ -106,14 +106,15 @@ class page1 extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: <Widget>[
                         Card(
-                            color: Colors.deepOrangeAccent,
+                            color: Colors.red,
                             child: RichText(
                               text: TextSpan(
                                 children: [
                                   TextSpan(
-                                    text: 'Natures Light',
+                                    text: '          Natures Light',
                                     style: TextStyle(
-                                      fontSize: 25.0,
+                                      color: Colors.white,
+                                      fontSize: 20.0,
                                     ),
                                   ),
                                   WidgetSpan(
@@ -136,14 +137,15 @@ class page1 extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: <Widget>[
                         Card(
-                            color: Colors.deepOrangeAccent,
+                            color: Colors.tealAccent,
                             child: RichText(
                               text: TextSpan(
                                 children: [
                                   TextSpan(
-                                    text: 'Cultural',
+                                    text: '          Cultural',
                                     style: TextStyle(
-                                      fontSize: 25.0,
+                                      color: Colors.white,
+                                      fontSize: 20.0,
                                     ),
                                   ),
                                   WidgetSpan(
@@ -166,14 +168,15 @@ class page1 extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: <Widget>[
                         Card(
-                            color: Colors.deepOrangeAccent,
+                            color: Colors.amberAccent,
                             child: RichText(
                               text: TextSpan(
                                 children: [
                                   TextSpan(
-                                    text: 'Modern Life',
+                                    text: '          Modern Life',
                                     style: TextStyle(
-                                      fontSize: 25.0,
+                                      color: Colors.white,
+                                      fontSize: 20.0,
                                     ),
                                   ),
                                   WidgetSpan(
@@ -196,14 +199,15 @@ class page1 extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: <Widget>[
                         Card(
-                            color: Colors.deepOrangeAccent,
+                            color: Colors.green,
                             child: RichText(
                               text: TextSpan(
                                 children: [
                                   TextSpan(
-                                    text: 'Peoples',
+                                    text: '          Peoples',
                                     style: TextStyle(
-                                      fontSize: 25.0,
+                                      color: Colors.white,
+                                      fontSize: 20.0,
                                     ),
                                   ),
                                   WidgetSpan(
@@ -226,14 +230,15 @@ class page1 extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: <Widget>[
                         Card(
-                            color: Colors.deepOrangeAccent,
+                            color: Colors.teal,
                             child: RichText(
                               text: TextSpan(
                                 children: [
                                   TextSpan(
-                                    text: 'Sand and Sun',
+                                    text: '          Sand and Sun',
                                     style: TextStyle(
-                                      fontSize: 25.0,
+                                      color: Colors.white,
+                                      fontSize: 20.0,
                                     ),
                                   ),
                                   WidgetSpan(
@@ -256,14 +261,15 @@ class page1 extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: <Widget>[
                         Card(
-                            color: Colors.deepOrangeAccent,
+                            color: Colors.blue,
                             child: RichText(
                               text: TextSpan(
                                 children: [
                                   TextSpan(
-                                    text: 'Health',
+                                    text: '          Health',
                                     style: TextStyle(
-                                      fontSize: 25.0,
+                                      color: Colors.white,
+                                      fontSize: 20.0,
                                     ),
                                   ),
                                   WidgetSpan(
@@ -370,7 +376,7 @@ class page2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.teal,
         appBar: AppBar(
           centerTitle: true,
           title: Text('Compose'),
@@ -393,7 +399,7 @@ class page2 extends StatelessWidget {
                         children: <Widget>[
                           FlatButton(
                             child: Text(
-                              '4 People',
+                              '3 Peoples',
                               style: new TextStyle(
                                 fontSize: 20.0,
                                 fontWeight: FontWeight.bold,
@@ -436,11 +442,11 @@ class page2 extends StatelessWidget {
                 ],
               ),
               TextField(
-                style: TextStyle(color: Colors.red),
+                style: TextStyle(color: Colors.black),
                 obscureText: true,
                 decoration: InputDecoration(
                   enabledBorder: UnderlineInputBorder(
-                    borderSide: BorderSide(color: Colors.white),
+                    borderSide: BorderSide(color: Colors.black),
                   ),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.all(
@@ -449,11 +455,11 @@ class page2 extends StatelessWidget {
                   ),
                   prefixIcon: new Icon(
                     Icons.search,
-                    color: Colors.white,
+                    color: Colors.black,
                   ),
                   labelText: 'Search peoples',
-                  labelStyle: TextStyle(color: Colors.white),
-                  fillColor: Colors.grey[900],
+                  labelStyle: TextStyle(color: Colors.black),
+                  fillColor: Colors.blueGrey,
                 ),
               ),
               SizedBox(
@@ -469,7 +475,7 @@ class page2 extends StatelessWidget {
                     children: <Widget>[
                       IconButton(
                           icon: Icon(Icons.supervised_user_circle_outlined),
-                          color: Colors.white,
+                          color: Colors.black,
                           iconSize: 30.0,
                           onPressed: () {}),
                     ],
@@ -482,7 +488,7 @@ class page2 extends StatelessWidget {
                             Text(
                               'Bilal',
                               style: TextStyle(
-                                  color: Colors.white, fontSize: 30.0),
+                                  color: Colors.black, fontSize: 30.0),
                             ),
                           ],
                         ),
@@ -490,7 +496,7 @@ class page2 extends StatelessWidget {
                           children: <Widget>[
                             Text(
                               '30 minutes ago',
-                              style: TextStyle(color: Colors.white),
+                              style: TextStyle(color: Colors.black),
                             ),
                           ],
                         ),
@@ -512,7 +518,7 @@ class page2 extends StatelessWidget {
                     children: <Widget>[
                       IconButton(
                           icon: Icon(Icons.supervised_user_circle_outlined),
-                          color: Colors.white,
+                          color: Colors.black,
                           iconSize: 30.0,
                           onPressed: () {}),
                     ],
@@ -525,7 +531,7 @@ class page2 extends StatelessWidget {
                             Text(
                               'Arslan',
                               style: TextStyle(
-                                  color: Colors.white, fontSize: 30.0),
+                                  color: Colors.black, fontSize: 30.0),
                             ),
                           ],
                         ),
@@ -533,7 +539,7 @@ class page2 extends StatelessWidget {
                           children: <Widget>[
                             Text(
                               '1 hour ago',
-                              style: TextStyle(color: Colors.white),
+                              style: TextStyle(color: Colors.black),
                             ),
                           ],
                         ),
@@ -555,7 +561,7 @@ class page2 extends StatelessWidget {
                     children: <Widget>[
                       IconButton(
                           icon: Icon(Icons.supervised_user_circle_outlined),
-                          color: Colors.white,
+                          color: Colors.black,
                           iconSize: 30.0,
                           onPressed: () {}),
                     ],
@@ -568,7 +574,7 @@ class page2 extends StatelessWidget {
                             Text(
                               'Ali',
                               style: TextStyle(
-                                  color: Colors.white, fontSize: 30.0),
+                                  color: Colors.black, fontSize: 30.0),
                             ),
                           ],
                         ),
@@ -576,7 +582,7 @@ class page2 extends StatelessWidget {
                           children: <Widget>[
                             Text(
                               '2 hour ago',
-                              style: TextStyle(color: Colors.white),
+                              style: TextStyle(color: Colors.black),
                             ),
                           ],
                         ),
@@ -594,7 +600,7 @@ class page2 extends StatelessWidget {
               ),
               Expanded(
                 child: Container(
-                  color: Colors.black,
+                  color: Colors.teal,
                 ),
               ),
               Row(
@@ -605,7 +611,7 @@ class page2 extends StatelessWidget {
                       obscureText: true,
                       decoration: InputDecoration(
                         enabledBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.white),
+                          borderSide: BorderSide(color: Colors.black),
                         ),
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.all(
@@ -614,15 +620,15 @@ class page2 extends StatelessWidget {
                         ),
                         prefixIcon: new Icon(
                           Icons.add,
-                          color: Colors.white,
+                          color: Colors.black,
                         ),
                         labelText: 'Send Message',
-                        labelStyle: TextStyle(color: Colors.white),
+                        labelStyle: TextStyle(color: Colors.black),
                         fillColor: Colors.grey[900],
                         suffixIcon: IconButton(
                           icon: Icon(
                             Icons.arrow_right,
-                            color: Colors.white,
+                            color: Colors.black,
                             size: 50.0,
                           ),
                         ),
