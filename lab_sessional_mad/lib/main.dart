@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(page3());
+  runApp(page2());
 }
 
 class MyApp extends StatelessWidget {
@@ -370,7 +370,7 @@ class page2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.white,
         appBar: AppBar(
           centerTitle: true,
           title: Text('Compose'),
