@@ -100,56 +100,56 @@ class _HomePageState extends State<HomePage> {
     return ListView.builder(
       itemCount: results.length,
       itemBuilder: (context, index) => Card(
-            color: Colors.white,
-            elevation: 0.0,
-            child: ExpansionTile(
-              title: Padding(
-                padding: const EdgeInsets.all(18.0),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: <Widget>[
-                    Text(
-                      results[index].question,
-                      style: TextStyle(
-                        fontSize: 18.0,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                    FittedBox(
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: <Widget>[
-                          FilterChip(
-                            backgroundColor: Colors.grey[100],
-                            label: Text(results[index].category),
-                            onSelected: (b) {},
-                          ),
-                          SizedBox(
-                            width: 10.0,
-                          ),
-                          FilterChip(
-                            backgroundColor: Colors.grey[100],
-                            label: Text(
-                              results[index].difficulty,
-                            ),
-                            onSelected: (b) {},
-                          )
-                        ],
-                      ),
-                    )
-                  ],
+        color: Colors.white,
+        elevation: 0.0,
+        child: ExpansionTile(
+          title: Padding(
+            padding: const EdgeInsets.all(18.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: <Widget>[
+                Text(
+                  results[index].question,
+                  style: TextStyle(
+                    fontSize: 18.0,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
-              ),
-              leading: CircleAvatar(
-                backgroundColor: Colors.grey[100],
-                child: Text(results[index].type.startsWith("m") ? "M" : "B"),
-              ),
-              children: results[index].allAnswers.map((m) {
-                return AnswerWidget(results, index, m);
-              }).toList(),
+                FittedBox(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      FilterChip(
+                        backgroundColor: Colors.grey[100],
+                        label: Text(results[index].category),
+                        onSelected: (b) {},
+                      ),
+                      SizedBox(
+                        width: 10.0,
+                      ),
+                      FilterChip(
+                        backgroundColor: Colors.grey[100],
+                        label: Text(
+                          results[index].difficulty,
+                        ),
+                        onSelected: (b) {},
+                      )
+                    ],
+                  ),
+                )
+              ],
             ),
           ),
+          leading: CircleAvatar(
+            backgroundColor: Colors.grey[100],
+            child: Text(results[index].type.startsWith("m") ? "M" : "B"),
+          ),
+          children: results[index].allAnswers.map((m) {
+            return AnswerWidget(results, index, m);
+          }).toList(),
+        ),
+      ),
     );
   }
 }
