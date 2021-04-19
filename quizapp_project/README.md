@@ -1,16 +1,13 @@
-# quizapp_project
+# Created Assignment 
+Quiz app with feature created
 
-A new Flutter project.
+# SplashScreen Added
+Added splash screen with name reg#
 
-## Getting Started
+![Screenshot (28)](https://user-images.githubusercontent.com/79256743/115224503-5b72a000-a126-11eb-9d65-90fa99a6235c.png)
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+# HomeScreen Added
+Added Home Screen with two button True/False and Multiple Choice Question
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Screenshot (24)](https://user-images.githubusercontent.com/79256743/115224304-236b5d00-a126-11eb-9b5f-0e32e9c4e279.png)
