@@ -25,16 +25,68 @@ class _splashscreenState extends State<splashscreen> {
     return Scaffold(
       backgroundColor: Colors.amberAccent,
       body: Center(
-        child: Text(
-          'Name : Mufassal Hussain\n Reg#: FA17-BCS-049',
-          style: TextStyle(
-            fontSize: 30.0,
-            color: Colors.red,
-            fontFamily: "Satisfy",
+          child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          SizedBox(
+            height: 10.0,
+            child: Divider(
+              color: Colors.black,
+            ),
           ),
-          textAlign: TextAlign.center,
-        ),
-      ),
+          Text(
+            'Welcome to My Quiz App',
+            style: TextStyle(
+              fontSize: 30.0,
+              color: Colors.red,
+              fontFamily: "Satisfy",
+            ),
+            textAlign: TextAlign.center,
+          ),
+          SizedBox(
+            height: 10.0,
+            child: Divider(
+              color: Colors.black,
+            ),
+          ),
+          SizedBox(
+            height: 20.0,
+          ),
+          CircleAvatar(
+            radius: 87,
+            backgroundColor: Colors.black,
+            child: CircleAvatar(
+              backgroundColor: Colors.white,
+              radius: 85,
+              backgroundImage: AssetImage('images/Mufassalprofile.png'),
+            ),
+          ),
+          SizedBox(
+            height: 20.0,
+          ),
+          SizedBox(
+            height: 10.0,
+            child: Divider(
+              color: Colors.black,
+            ),
+          ),
+          Text(
+            'Name : Mufassal Hussain\n Reg#: FA17-BCS-049',
+            style: TextStyle(
+              fontSize: 30.0,
+              color: Colors.red,
+              fontFamily: "Satisfy",
+            ),
+            textAlign: TextAlign.center,
+          ),
+          SizedBox(
+            height: 10.0,
+            child: Divider(
+              color: Colors.black,
+            ),
+          ),
+        ],
+      )),
     );
   }
 }
