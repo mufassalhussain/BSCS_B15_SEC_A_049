@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quizapp_project/quiz_mcqs.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -65,7 +66,9 @@ class _HomeScreenState extends State<HomeScreen> {
               minWidth: 70.0,
               height: 70.0,
               onPressed: () {
-                Navigator.pushNamed(context, '/second');
+                Navigator.of(context).pushReplacement(MaterialPageRoute(
+                  builder: (context) => quizhomepage(),
+                ));
               },
               child: Text(
                 "Multiple Choice Questions",
@@ -80,7 +83,7 @@ class _HomeScreenState extends State<HomeScreen> {
               minWidth: 70.0,
               height: 70.0,
               onPressed: () {
-                Navigator.pushNamed(context, '/third');
+                Navigator.pushNamed(context, '/second');
               },
               child: Text(
                 "True/False Questions",
