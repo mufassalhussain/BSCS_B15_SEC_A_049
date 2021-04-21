@@ -69,3 +69,10 @@ With functionality move from one page to another
 ![Screenshot (46)](https://user-images.githubusercontent.com/79256743/115545715-8fcc9480-a2bd-11eb-931a-f7e03f0db7a5.png)
 ![Screenshot (45)](https://user-images.githubusercontent.com/79256743/115545723-93601b80-a2bd-11eb-8aa5-dd27c919faa5.png)
 
+
+# Added Contact Us page
+with my information
+![Screenshot (44)](https://user-images.githubusercontent.com/79256743/115545813-ac68cc80-a2bd-11eb-8a4b-7240f6da343b.png)
+
+
+# ASSIGNMENT COMPLETED :)
