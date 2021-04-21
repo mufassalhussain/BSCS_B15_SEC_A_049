@@ -50,6 +50,7 @@ class _resultpageState extends State<resultpage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: NavDrawer(),
       appBar: AppBar(
         centerTitle: true,
         title: Text(
