@@ -1,11 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:quizapp_project/quiz_mcqs.dart';
+import 'package:quizapp_project/home.dart';
+import 'package:quizapp_project/quizpage_mcqs.dart';
+import 'package:quizapp_project/quiz_tf.dart';
 
 class resultpage extends StatefulWidget {
   int marks;
   resultpage({Key key, @required this.marks}) : super(key: key);
   @override
   _resultpageState createState() => _resultpageState(marks);
+}
+
+String Quiz;
+void Quiz_mcqs(int number) {
+  if (number == 1) {
+    Quiz = "mcqs";
+  } else {
+    Quiz = "tf";
+  }
 }
 
 class _resultpageState extends State<resultpage> {
@@ -40,8 +51,26 @@ class _resultpageState extends State<resultpage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         title: Text(
-          "Result",
+          'Result',
+          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15.0),
+        ),
+
+        // leading: IconButton(
+        //  icon: Icon(Icons.menu),
+        //onPressed: () {
+        // NavDrawer();
+        //},
+        // ),
+        flexibleSpace: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.centerLeft,
+              end: Alignment.centerRight,
+              colors: [Colors.purple, Colors.blue],
+            ),
+          ),
         ),
       ),
       body: Container(
@@ -91,14 +120,27 @@ class _resultpageState extends State<resultpage> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  OutlineButton(
+                  Expanded(
+                      child: OutlineButton(
                     onPressed: () {
-                      Navigator.of(context).pushReplacement(MaterialPageRoute(
-                        builder: (context) => quizhomepage(),
-                      ));
+                      if (Quiz == "mcqs") {
+                        Navigator.of(context).pushReplacement(MaterialPageRoute(
+                          // in changelog 1 we will pass the langname name to ther other widget class
+                          // this name will be used to open a particular JSON file
+                          // for a particular language
+                          builder: (context) => getjson("Mcqs"),
+                        ));
+                      } else if (Quiz == "tf") {
+                        Navigator.of(context).pushReplacement(MaterialPageRoute(
+                          // in changelog 1 we will pass the langname name to ther other widget class
+                          // this name will be used to open a particular JSON file
+                          // for a particular language
+                          builder: (context) => getjson2("tf"),
+                        ));
+                      }
                     },
                     child: Text(
-                      "Continue",
+                      "Play Again",
                       style: TextStyle(
                         fontSize: 18.0,
                       ),
@@ -109,7 +151,28 @@ class _resultpageState extends State<resultpage> {
                     ),
                     borderSide: BorderSide(width: 3.0, color: Colors.indigo),
                     splashColor: Colors.indigoAccent,
-                  )
+                  )),
+                  Expanded(
+                    child: OutlineButton(
+                      onPressed: () {
+                        Navigator.of(context).pushReplacement(MaterialPageRoute(
+                          builder: (context) => HomeScreen(),
+                        ));
+                      },
+                      child: Text(
+                        "End Quiz",
+                        style: TextStyle(
+                          fontSize: 18.0,
+                        ),
+                      ),
+                      padding: EdgeInsets.symmetric(
+                        vertical: 10.0,
+                        horizontal: 25.0,
+                      ),
+                      borderSide: BorderSide(width: 3.0, color: Colors.indigo),
+                      splashColor: Colors.indigoAccent,
+                    ),
+                  ),
                 ],
               ),
             )

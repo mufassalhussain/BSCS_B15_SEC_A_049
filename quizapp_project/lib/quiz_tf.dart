@@ -6,20 +6,20 @@ import 'package:flutter/services.dart';
 import 'package:quizapp_project/home.dart';
 import 'package:quizapp_project/resultpage.dart';
 
-class getjson extends StatelessWidget {
+class getjson2 extends StatelessWidget {
   // accept the langname as a parameter
 
   String langname;
-  getjson(this.langname);
+  getjson2(this.langname);
   String assettoload;
 
   // a function
   // sets the asset to a particular JSON file
   // and opens the JSON
   setasset() {
-    if (langname == "Mcqs") {
-      assettoload = "assets/mcqs.json";
-      Quiz_mcqs(1);
+    if (langname == "tf") {
+      assettoload = "assets/tf.json";
+      Quiz_mcqs(0);
     } else {}
   }
 
@@ -70,15 +70,13 @@ class _quizpageState extends State<quizpage> {
   bool disableAnswer = false;
   // extra varibale to iterate
   int j = 1;
-  int timer = 60;
-  String showtimer = "60";
+  int timer = 30;
+  String showtimer = "30";
   var random_array;
 
   Map<String, Color> btncolor = {
     "a": Colors.indigoAccent,
     "b": Colors.indigoAccent,
-    "c": Colors.indigoAccent,
-    "d": Colors.indigoAccent,
   };
 
   bool canceltimer = false;
@@ -154,7 +152,7 @@ class _quizpageState extends State<quizpage> {
 
   void nextquestion() {
     canceltimer = false;
-    timer = 60;
+    timer = 30;
     setState(() {
       if (j < 10) {
         i = random_array[j];
@@ -166,8 +164,7 @@ class _quizpageState extends State<quizpage> {
       }
       btncolor["a"] = Colors.indigoAccent;
       btncolor["b"] = Colors.indigoAccent;
-      btncolor["c"] = Colors.indigoAccent;
-      btncolor["d"] = Colors.indigoAccent;
+
       disableAnswer = false;
     });
     starttimer();
@@ -280,8 +277,6 @@ class _quizpageState extends State<quizpage> {
                     children: <Widget>[
                       choicebutton('a'),
                       choicebutton('b'),
-                      choicebutton('c'),
-                      choicebutton('d'),
                     ],
                   ),
                 ),

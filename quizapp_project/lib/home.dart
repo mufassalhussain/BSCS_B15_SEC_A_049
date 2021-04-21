@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:quizapp_project/quiz_mcqs.dart';
+import 'package:quizapp_project/quiz_tf.dart';
+import 'package:quizapp_project/quizpage_mcqs.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -67,8 +68,10 @@ class _HomeScreenState extends State<HomeScreen> {
               height: 70.0,
               onPressed: () {
                 Navigator.of(context).pushReplacement(MaterialPageRoute(
-                  builder: (context) => quizhomepage(),
-                ));
+                    // in changelog 1 we will pass the langname name to ther other widget class
+                    // this name will be used to open a particular JSON file
+                    // for a particular language
+                    builder: (context) => getjson("Mcqs")));
               },
               child: Text(
                 "Multiple Choice Questions",
@@ -83,7 +86,11 @@ class _HomeScreenState extends State<HomeScreen> {
               minWidth: 70.0,
               height: 70.0,
               onPressed: () {
-                Navigator.pushNamed(context, '/second');
+                Navigator.of(context).pushReplacement(MaterialPageRoute(
+                    // in changelog 1 we will pass the langname name to ther other widget class
+                    // this name will be used to open a particular JSON file
+                    // for a particular language
+                    builder: (context) => getjson2("tf")));
               },
               child: Text(
                 "True/False Questions",
