@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:quizapp_project/quiz_mcqs.dart';
+
 import 'package:quizapp_project/splashscreen.dart';
 
 void main() {
