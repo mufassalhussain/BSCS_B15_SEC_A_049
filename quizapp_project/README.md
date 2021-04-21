@@ -53,3 +53,16 @@ go to home button in during result and quiz page
 ![image](https://user-images.githubusercontent.com/79256743/115533995-c0f29800-a2b0-11eb-95b6-f657f0940162.png)
 ![image](https://user-images.githubusercontent.com/79256743/115534286-1169f580-a2b1-11eb-8d4b-72345ca5a841.png)
 
+
+# Different Animations in Result page 
+show differnt animations based on result
+
+# on Good Result
+![image](https://user-images.githubusercontent.com/79256743/115534629-69086100-a2b1-11eb-97f0-6ea1bc342e1f.png)
+# on Bad Result
+![image](https://user-images.githubusercontent.com/79256743/115534839-a0770d80-a2b1-11eb-9be7-6abd15673ba2.png)
+# on Average Result
+![image](https://user-images.githubusercontent.com/79256743/115534944-b7b5fb00-a2b1-11eb-80d4-b056cf8b7580.png)
+
+
+
