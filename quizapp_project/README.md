@@ -45,5 +45,11 @@ timer 30 second for each question and added End Quiz button during Quiz..
 # Multiple Choice Questions Page Update
  added End Quiz Button During Quiz
  
- ![image](https://user-images.githubusercontent.com/79256743/115527630-ac130600-a2aa-11eb-8799-3e3500f203ae.png)
+![image](https://user-images.githubusercontent.com/79256743/115527630-ac130600-a2aa-11eb-8799-3e3500f203ae.png)
+
+# Go to Home button for everypage
+go to home button in during result and quiz page
+
+![image](https://user-images.githubusercontent.com/79256743/115533995-c0f29800-a2b0-11eb-95b6-f657f0940162.png)
+![image](https://user-images.githubusercontent.com/79256743/115534286-1169f580-a2b1-11eb-8d4b-72345ca5a841.png)
 
