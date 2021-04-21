@@ -160,7 +160,7 @@ class _resultpageState extends State<resultpage> {
                         ));
                       },
                       child: Text(
-                        "End Quiz",
+                        "Go to Home",
                         style: TextStyle(
                           fontSize: 18.0,
                         ),

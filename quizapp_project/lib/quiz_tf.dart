@@ -299,7 +299,8 @@ class _quizpageState extends State<quizpage> {
               ),
             ),
             Expanded(
-                child: Row(
+                child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 FlatButton(
                   minWidth: 70.0,
@@ -310,7 +311,7 @@ class _quizpageState extends State<quizpage> {
                     ));
                   },
                   child: Text(
-                    "End Quiz",
+                    "End Quiz and Go to Home",
                     style:
                         TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
                   ),
