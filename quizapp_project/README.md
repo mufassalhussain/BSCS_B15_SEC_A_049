@@ -1,3 +1,8 @@
+# Final App loook
+
+![1](https://s4.ezgif.com/save/ezgif-4-d60c563ec66d.gif)
+
+
 # Created Assignment 
 Quiz app with feature created
 
