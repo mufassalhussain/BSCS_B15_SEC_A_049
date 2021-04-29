@@ -1,8 +1,3 @@
-# Final App loook
-
-![1](https://s4.ezgif.com/save/ezgif-4-d60c563ec66d.gif)
-
-
 # Created Assignment 
 Quiz app with feature created
 
@@ -59,8 +54,8 @@ go to home button in during result and quiz page
 ![image](https://user-images.githubusercontent.com/79256743/115534286-1169f580-a2b1-11eb-8d4b-72345ca5a841.png)
 
 
-# Different Animations in Result page 
-show differnt animations based on result
+# Different Image in Result page 
+show differnt image based on result
 
 # on Good Result
 ![image](https://user-images.githubusercontent.com/79256743/115534629-69086100-a2b1-11eb-97f0-6ea1bc342e1f.png)
