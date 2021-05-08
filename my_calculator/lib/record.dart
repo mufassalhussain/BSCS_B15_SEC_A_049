@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'calculator.dart';
+import 'hard.dart';
 import 'simple.dart';
 
 class History extends StatelessWidget {
@@ -36,8 +37,9 @@ class History extends StatelessWidget {
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () {
-            flags();
-            //flags2();
+            //flags();
+            flags2();
+/*
             if (flag == 0) {
               Navigator.push(
                   context,
@@ -45,15 +47,15 @@ class History extends StatelessWidget {
                     builder: (context) => simplelevel(),
                   ));
             }
-            /*
-              if (flags2 == 0) {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => simplelevel(),
-                    ));
-              }
-              */
+            */
+
+            if (flags == 1) {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => hardlevel(),
+                  ));
+            }
           },
         ),
 
