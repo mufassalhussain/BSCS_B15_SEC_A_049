@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.my_calculator">
+    package="com.example.covid.quizapp_project">
    <application
-        android:label="my_calculator"
+        android:label="quizapp_project"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

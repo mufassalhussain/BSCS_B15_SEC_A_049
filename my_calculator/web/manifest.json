@@ -1,6 +1,6 @@
 {
-    "name": "my_calculator",
-    "short_name": "my_calculator",
+    "name": "quizapp_project",
+    "short_name": "quizapp_project",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

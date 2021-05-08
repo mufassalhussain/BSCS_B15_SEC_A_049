@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-//import 'package:quizapp_project/home.dart';
+import 'package:my_calculator/home.dart';
 
 class splashscreen extends StatefulWidget {
   @override
@@ -13,7 +13,7 @@ class _splashscreenState extends State<splashscreen> {
     super.initState();
     Timer(Duration(seconds: 5), () {
       Navigator.of(context).pushReplacement(MaterialPageRoute(
-        builder: (context) => null,
+        builder: (context) => mainhome(),
       ));
     });
   }
@@ -52,12 +52,11 @@ class _splashscreenState extends State<splashscreen> {
           SizedBox(
             height: 20.0,
           ),
-          CircleAvatar(
-            backgroundColor: Colors.white,
-            radius: 85,
-            backgroundImage: AssetImage(
-                'assets/images/65ba488626025cff82f091336fbf94bb.gif'),
+          Expanded(),
+          Expanded(
+            child: Image.asset('images/65ba488626025cff82f091336fbf94bb.gif'),
           ),
+          Expanded(),
           SizedBox(
             height: 20.0,
           ),

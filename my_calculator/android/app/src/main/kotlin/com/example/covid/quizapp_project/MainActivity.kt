@@ -1,4 +1,4 @@
-package com.example.my_calculator
+package com.example.covid.quizapp_project
 
 import io.flutter.embedding.android.FlutterActivity
 
