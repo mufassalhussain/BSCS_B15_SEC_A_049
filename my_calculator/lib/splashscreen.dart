@@ -55,7 +55,8 @@ class _splashscreenState extends State<splashscreen> {
           CircleAvatar(
             backgroundColor: Colors.white,
             radius: 85,
-            backgroundImage: AssetImage('images/1_e_Loq49BI4WmN7o9ItTADg.gif'),
+            backgroundImage: AssetImage(
+                'assets/images/65ba488626025cff82f091336fbf94bb.gif'),
           ),
           SizedBox(
             height: 20.0,
