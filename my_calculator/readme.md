@@ -1,3 +1,8 @@
+# COMPLETED APP DEMO
+![tWuCnHglFn](https://user-images.githubusercontent.com/79256743/117561827-91ff6300-b0b3-11eb-9ea6-ad62dc8f4920.gif)
+
+
+# ALL COMITS
 # Project created
 flutter project created for Sessional 2
 
@@ -64,14 +69,4 @@ contact us added with  name,profile picture and number
 
 ![Screenshot (67)](https://user-images.githubusercontent.com/79256743/117561443-6464ea80-b0b0-11eb-9b0a-f0c1826848a6.png)
 
-#Con
-
-
-
-
-
- 
-
-
-
-
+# APP COMPLETED SESSIONAL 2 :)
