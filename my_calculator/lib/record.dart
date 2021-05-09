@@ -37,17 +37,13 @@ class History extends StatelessWidget {
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () {
-            //flags();
-            flags2();
-/*
-            if (flag == 0) {
+            if (flag == 1) {
               Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (context) => simplelevel(),
                   ));
             }
-            */
 
             if (flags == 1) {
               Navigator.push(

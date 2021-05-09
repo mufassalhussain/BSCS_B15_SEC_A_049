@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:my_calculator/hard.dart';
 import 'package:my_calculator/simple.dart';
-//import 'package:quizapp_jawaia/truefalse.dart';
+import 'package:my_calculator/contacts.dart';
 
 class mainhome extends StatefulWidget {
   @override
@@ -108,7 +108,7 @@ class _mainhomeState extends State<mainhome> {
     return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.white,
-        //drawer: NavDrawer(),
+        drawer: NavDrawer(),
         appBar: AppBar(
           toolbarHeight: 70.0,
           centerTitle: true,
@@ -155,13 +155,71 @@ class _mainhomeState extends State<mainhome> {
             ),
           ),
         ),
-
         body: ListView(
           children: <Widget>[
             customcard("Simple Level", images[0], des[0]),
             customcard("Hard Level", images[1], des[1]),
           ],
         ),
+      ),
+    );
+  }
+}
+
+class NavDrawer extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Drawer(
+      child: ListView(
+        padding: EdgeInsets.zero,
+        children: <Widget>[
+          DrawerHeader(
+            child: Text(
+              '',
+              style: TextStyle(
+                  color: Colors.red,
+                  fontSize: 15.0,
+                  fontWeight: FontWeight.bold),
+            ),
+            decoration: BoxDecoration(
+                color: Colors.blue,
+                image: DecorationImage(
+                    fit: BoxFit.contain,
+                    image: AssetImage('images/calculator--v2.png'))),
+          ),
+          ListTile(
+            leading: Icon(Icons.home),
+            title: Text('Home'),
+            onTap: () => {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => mainhome())),
+            },
+          ),
+          ListTile(
+            leading: Icon(Icons.question_answer),
+            title: Text('Simple Level'),
+            onTap: () => {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => simplelevel())),
+            },
+          ),
+          ListTile(
+            leading: Icon(Icons.question_answer_outlined),
+            title: Text('Hard Level'),
+            onTap: () => {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => hardlevel())),
+            },
+          ),
+          ListTile(
+            leading: Icon(Icons.contact_page),
+            title: Text('Contacts Us'),
+            onTap: () => {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => aboutus())),
+            },
+          ),
+        ],
       ),
     );
   }

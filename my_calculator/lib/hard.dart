@@ -21,14 +21,17 @@ class _hardlevelState extends State<hardlevel> {
   List<String> hist = [];
   List<String> calculations = [];
   int uh = 0;
-  int rh;
+  int rh = 0;
+  int inc = 0;
+  int inc2 = 0;
   int uo = 0;
-  int ro;
+  int ro = 0;
   int hc = 0;
   String cal;
   var ph, po, pa;
   var history = "", output = "0", answer = 0.0;
   void record() {
+    flags2();
     Navigator.of(context).pushReplacement(MaterialPageRoute(
       builder: (context) => History(operations: calculations),
     ));
@@ -36,16 +39,18 @@ class _hardlevelState extends State<hardlevel> {
 
   void undo() {
     setState(() {
-      if (undooutput[uo] == null && undohistory[uh] == null) {
-      } else {
+      if (uo < undooutput.length) {
         output = undooutput[uo];
         redooutput.add(output);
         uo = uo + 1;
-
+        ro = ro + 1;
+      } else {}
+      if (uh < undohistory.length) {
         history = undohistory[uh];
         redohistory.add(history);
         uh = uh + 1;
-      }
+        rh = rh + 1;
+      } else {}
     });
 
     // history = undohistory.toString();
@@ -54,10 +59,16 @@ class _hardlevelState extends State<hardlevel> {
 
   void redo() {
     setState(() {
-      output = redooutput[uo];
-      uo = uo - 1;
-      history = redohistory[uh];
-      uh = uh - 1;
+      if (inc < ro) {
+        output = redooutput[inc];
+        inc = inc + 1;
+        uo = uo - 1;
+      } else {}
+      if (inc2 < rh) {
+        history = redohistory[inc2];
+        inc2 = inc2 + 1;
+        uh = uh - 1;
+      } else {}
     });
   }
 
