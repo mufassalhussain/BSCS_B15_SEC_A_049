@@ -49,6 +49,24 @@ app icon added in AppBar with APP Name
 ![Screenshot (64)](https://user-images.githubusercontent.com/79256743/117560832-a8ed8780-b0aa-11eb-86b4-4fcc1c16c519.png)
 ![7fWOSYVAyl](https://user-images.githubusercontent.com/79256743/117560836-b276ef80-b0aa-11eb-98e8-95e66609d766.gif)
 
+# Functionality to go home from any screem
+
+![Screenshot (65)](https://user-images.githubusercontent.com/79256743/117561343-7c883a00-b0af-11eb-82ee-2f26bb6ac964.png)
+
+# Exit at any time 
+
+# NavDrawer Added 
+that go to any page from one page
+![Screenshot (66)](https://user-images.githubusercontent.com/79256743/117561358-a5103400-b0af-11eb-8463-5c3bd99f6989.png)
+
+# Contact Us screen Added
+contact us added with  name,profile picture and number
+
+![Screenshot (67)](https://user-images.githubusercontent.com/79256743/117561443-6464ea80-b0b0-11eb-9b0a-f0c1826848a6.png)
+
+#Con
+
+
 
 
 
