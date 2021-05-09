@@ -31,7 +31,29 @@ app icon added in AppBar with APP Name
 # d. User check all record saved history or previous result
 ![Screenshot (56)](https://user-images.githubusercontent.com/79256743/117559502-59ee2500-b09f-11eb-99b0-798386300dcb.png)
 # e. Previous Results
-![Screenshot (57)](https://user-images.githubusercontent.com/79256743/117559523-89049680-b09f-11eb-9c06-9164adfa5ccd.png)
+![Screenshot (57)](https://user-images.githubusercontent.com/79256743/117559523-89049680-b0![ZjdesbonU6](https://user-images.githubusercontent.com/79256743/117560738-ca01a880-b0a9-11eb-8e86-028030c2f4d0.png)
+9f-11eb-9c06-9164adfa5ccd.png)
+
+
+# Hard Level Calculator Completed
+# a.Interface of an Intermediate level
+![Screenshot (59)](https://user-images.githubusercontent.com/79256743/117559787-b18d9000-b0a1-11eb-8203-89929f7f83f9.png)
+# b.Contain All Above feature C to D
+# Result in Alert Dialog Box
+![Screenshot (60)](https://user-images.githubusercontent.com/79256743/117559811-deda3e00-b0a1-11eb-9938-451c39f0a1f5.png)
+# Previous Result History
+![Screenshot (62)](https://user-images.githubusercontent.com/79256743/117559840-15b05400-b0a2-11eb-84e3-5ed2f275e715.png)
+# Record of all results
+![Screenshot (63)](https://user-images.githubusercontent.com/79256743/117559892-92433280-b0a2-11eb-8b81-a54db5810203.png)
+
+# Undo and Redo Operation
+![Screenshot (64)](https://user-images.githubusercontent.com/79256743/117560832-a8ed8780-b0aa-11eb-86b4-4fcc1c16c519.png)
+![7fWOSYVAyl](https://user-images.githubusercontent.com/79256743/117560836-b276ef80-b0aa-11eb-98e8-95e66609d766.gif)
+
+
+
+
+ 
 
 
 
