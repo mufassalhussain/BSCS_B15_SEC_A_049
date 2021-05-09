@@ -31,8 +31,7 @@ app icon added in AppBar with APP Name
 # d. User check all record saved history or previous result
 ![Screenshot (56)](https://user-images.githubusercontent.com/79256743/117559502-59ee2500-b09f-11eb-99b0-798386300dcb.png)
 # e. Previous Results
-![Screenshot (57)](https://user-images.githubusercontent.com/79256743/117559523-89049680-b0![ZjdesbonU6](https://user-images.githubusercontent.com/79256743/117560738-ca01a880-b0a9-11eb-8e86-028030c2f4d0.png)
-9f-11eb-9c06-9164adfa5ccd.png)
+![Screenshot (57)](https://user-images.githubusercontent.com/79256743/117559523-89049680-b09f-11eb-9c06-9164adfa5ccd.png)
 
 
 # Hard Level Calculator Completed
