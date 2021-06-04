@@ -1,16 +1,11 @@
 # mynotesapp
 
-A new Flutter project.
+# WITHOUT DATA ENTRY
+![1](https://user-images.githubusercontent.com/79256743/120822571-fc4eda80-c56f-11eb-8299-16348c2fb087.jpg)
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+# WRITE DATA AND INPUT TO FIREBASE
+![3](https://user-images.githubusercontent.com/79256743/120822606-07a20600-c570-11eb-81a9-62daa72e5619.jpg)
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# SHOW DATA 
+![2](https://user-images.githubusercontent.com/79256743/120822680-1b4d6c80-c570-11eb-843a-e8b8b0bdcba0.jpg)
