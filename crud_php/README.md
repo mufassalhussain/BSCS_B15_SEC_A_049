@@ -1,5 +1,5 @@
 # CRUD APP VIDEO SAMPLE FULL WITH DATABASE FILES AND HOSTING FILE MANAGER
-
+![file](https://github.com/mufassalhussain/BSCS_B15_SEC_A_049/blob/main/crud_php/sqgxSwuUal.mp4)
 
 
 
