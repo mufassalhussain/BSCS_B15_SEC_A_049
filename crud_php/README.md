@@ -1,7 +1,8 @@
+# PHP SCRIPT FILES USE IN PHP MYSQL DATABASE AS TO EXECUTE QUERY
+https://github.com/mufassalhussain/BSCS_B15_SEC_A_049/tree/main/crud_php/PHP%20SCRIPT%20FILES
+
 # CRUD APP VIDEO SAMPLE FULL WITH DATABASE FILES AND HOSTING FILE MANAGER
-![file](https://github.com/mufassalhussain/BSCS_B15_SEC_A_049/blob/main/crud_php/sqgxSwuUal.mp4)
-
-
+https://user-images.githubusercontent.com/79256743/124268757-5e8d0200-db53-11eb-80bd-f29b3df6c6b3.mp4
 
 # CRUD APP FLUTTER WITH PHP MYSQL
 
