@@ -107,8 +107,8 @@ class _HomeState extends State<Home> {
                           );
                         },
                       ),
-                      title: Text(list[index]['firstname']),
-                      subtitle: Text(list[index]['phone']),
+                      title: Text(list[index]['name']),
+                      subtitle: Text(list[index]['email']),
                       trailing: GestureDetector(
                         child: Icon(
                           Icons.delete,
@@ -122,7 +122,6 @@ class _HomeState extends State<Home> {
                               'id': list[index]['id'],
                             });
                           });
-                          debugPrint('delete Clicked');
                         },
                       ),
                     );

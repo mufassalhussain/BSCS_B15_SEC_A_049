@@ -13,8 +13,8 @@ class Add extends StatefulWidget {
 }
 
 class _AddState extends State<Add> {
-  TextEditingController firstName = TextEditingController();
-  TextEditingController lastName = TextEditingController();
+  TextEditingController name = TextEditingController();
+  TextEditingController email = TextEditingController();
   TextEditingController phone = TextEditingController();
   TextEditingController address = TextEditingController();
 
@@ -31,8 +31,8 @@ class _AddState extends State<Add> {
     var url = Uri.parse('https://mufihosting.000webhostapp.com/edit.php');
     http.post(url, body: {
       'id': widget.list[widget.index]['id'],
-      'firstname': firstName.text,
-      'lastname': lastName.text,
+      'name': name.text,
+      'email': email.text,
       'phone': phone.text,
       'address': address.text,
     });
@@ -41,8 +41,8 @@ class _AddState extends State<Add> {
   void add() {
     var url = Uri.parse('https://mufihosting.000webhostapp.com/add.php');
     http.post(url, body: {
-      'firstname': firstName.text,
-      'lastname': lastName.text,
+      'name': name.text,
+      'email': email.text,
       'phone': phone.text,
       'address': address.text,
     });
@@ -70,8 +70,8 @@ class _AddState extends State<Add> {
     super.initState();
     if (widget.index != null) {
       editMode = true;
-      firstName.text = widget.list[widget.index]['firstname'];
-      lastName.text = widget.list[widget.index]['lastname'];
+      name.text = widget.list[widget.index]['name'];
+      email.text = widget.list[widget.index]['email'];
       phone.text = widget.list[widget.index]['phone'];
       address.text = widget.list[widget.index]['address'];
     }
@@ -104,9 +104,37 @@ class _AddState extends State<Add> {
       ),
       body: ListView(
         children: <Widget>[
-          pad('First Name', firstName),
-          pad('Last Name', lastName),
-          pad('Phone', phone),
+          pad('Name', name),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: TextField(
+              keyboardType: TextInputType.emailAddress,
+              controller: email,
+              decoration: InputDecoration(
+                labelText: "Email",
+                hintStyle: TextStyle(
+                  fontSize: 16,
+                  color: Colors.black,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: TextField(
+              keyboardType: TextInputType.phone,
+              controller: phone,
+              decoration: InputDecoration(
+                labelText: "Phone",
+                hintStyle: TextStyle(
+                  fontSize: 16,
+                  color: Colors.black,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+          ),
           pad('Address', address),
           Padding(
             padding: EdgeInsets.all(8),
@@ -114,7 +142,6 @@ class _AddState extends State<Add> {
               onPressed: () {
                 setState(() {
                   addUpdateData();
-                  debugPrint('Adding running');
                 });
                 Navigator.push(
                   context,
@@ -122,11 +149,10 @@ class _AddState extends State<Add> {
                     builder: (context) => Home(),
                   ),
                 );
-                debugPrint('Clicked RaisedButton Button');
               },
               color: Colors.red,
               child: Text(
-                editMode ? 'Update' : 'Save',
+                editMode ? 'Update Data' : 'Save Data',
                 style: TextStyle(color: Colors.white),
               ),
             ),

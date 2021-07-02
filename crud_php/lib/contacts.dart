@@ -32,7 +32,7 @@ class _aboutusState extends State<aboutus> {
             gradient: LinearGradient(
               begin: Alignment.centerLeft,
               end: Alignment.centerRight,
-              colors: [Colors.purple, Colors.blue],
+              colors: [Colors.red, Colors.purple],
             ),
           ),
         ),

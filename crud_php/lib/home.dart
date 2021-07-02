@@ -134,7 +134,7 @@ class _mainhomeState extends State<mainhome> {
               gradient: LinearGradient(
                 begin: Alignment.centerLeft,
                 end: Alignment.centerRight,
-                colors: [Colors.purple, Colors.blue],
+                colors: [Colors.red, Colors.purple],
               ),
             ),
           ),
@@ -168,8 +168,7 @@ class NavDrawer extends StatelessWidget {
             decoration: BoxDecoration(
                 color: Colors.blue,
                 image: DecorationImage(
-                    fit: BoxFit.contain,
-                    image: AssetImage('images/calculator--v2.png'))),
+                    fit: BoxFit.contain, image: AssetImage('images/view.png'))),
           ),
           ListTile(
             leading: Icon(Icons.home),
@@ -180,7 +179,7 @@ class NavDrawer extends StatelessWidget {
             },
           ),
           ListTile(
-            leading: Icon(Icons.question_answer),
+            leading: Icon(Icons.read_more),
             title: Text('Read Data'),
             onTap: () => {
               Navigator.push(
@@ -188,7 +187,7 @@ class NavDrawer extends StatelessWidget {
             },
           ),
           ListTile(
-            leading: Icon(Icons.question_answer_outlined),
+            leading: Icon(Icons.add),
             title: Text('Add Data'),
             onTap: () => {
               Navigator.push(
@@ -196,7 +195,7 @@ class NavDrawer extends StatelessWidget {
             },
           ),
           ListTile(
-            leading: Icon(Icons.question_answer_outlined),
+            leading: Icon(Icons.contact_page),
             title: Text('Contact Us'),
             onTap: () => {
               Navigator.push(

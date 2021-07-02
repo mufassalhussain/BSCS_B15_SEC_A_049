@@ -24,17 +24,11 @@ class _splashscreenState extends State<splashscreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.purple,
+      backgroundColor: Colors.blue,
       body: Center(
           child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          SizedBox(
-            height: 10.0,
-            child: Divider(
-              color: Colors.black,
-            ),
-          ),
           Text(
             'Welcome to CRUD PHP MYSQL APP',
             style: TextStyle(
@@ -45,25 +39,15 @@ class _splashscreenState extends State<splashscreen> {
             textAlign: TextAlign.center,
           ),
           SizedBox(
-            height: 10.0,
-            child: Divider(
-              color: Colors.black,
-            ),
-          ),
-          SizedBox(
             height: 20.0,
           ),
           Expanded(
-            child: Image.asset('assets/annimation.gif'),
+            child: Image.asset(
+              'assets/annimation.gif',
+            ),
           ),
           SizedBox(
             height: 20.0,
-          ),
-          SizedBox(
-            height: 10.0,
-            child: Divider(
-              color: Colors.black,
-            ),
           ),
           Text(
             'Name : Mufassal Hussain\n Reg#: FA17-BCS-049',
@@ -73,12 +57,6 @@ class _splashscreenState extends State<splashscreen> {
               fontFamily: "Satisfy",
             ),
             textAlign: TextAlign.center,
-          ),
-          SizedBox(
-            height: 10.0,
-            child: Divider(
-              color: Colors.black,
-            ),
           ),
         ],
       )),
