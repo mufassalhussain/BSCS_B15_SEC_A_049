@@ -16,8 +16,8 @@ class _mainhomeState extends State<mainhome> {
   ];
 
   List<String> des = [
-    "Simple Level",
-    "Hard Level",
+    "Read Data",
+    "Add Data",
   ];
   Widget customcard(String langname, String image, String des) {
     return Padding(
