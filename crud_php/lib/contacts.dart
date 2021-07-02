@@ -72,7 +72,7 @@ class _aboutusState extends State<aboutus> {
                             backgroundColor: Colors.white,
                             radius: 85,
                             backgroundImage:
-                                AssetImage('images/Mufassalprofile.png'),
+                                AssetImage('assets/Mufassalprofile.png'),
                           ),
                         ),
                         SizedBox(

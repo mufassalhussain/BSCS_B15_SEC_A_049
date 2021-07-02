@@ -24,39 +24,46 @@ class _splashscreenState extends State<splashscreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        toolbarHeight: 70.0,
+        centerTitle: true,
+        title: Text(
+          'Welcome to CRUD PHP MYSQL APP',
+          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15.0),
+        ),
+
+        // leading: IconButton(
+        //  icon: Icon(Icons.menu),
+        //onPressed: () {
+        // NavDrawer();
+        //},
+        // ),
+        flexibleSpace: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.centerLeft,
+              end: Alignment.centerRight,
+              colors: [Colors.red, Colors.blue],
+            ),
+          ),
+        ),
+      ),
       backgroundColor: Colors.blue,
       body: Center(
           child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          Text(
-            'Welcome to CRUD PHP MYSQL APP',
-            style: TextStyle(
-              fontSize: 30.0,
-              color: Colors.white,
-              fontFamily: "Satisfy",
-            ),
-            textAlign: TextAlign.center,
-          ),
-          SizedBox(
-            height: 20.0,
-          ),
           Expanded(
             child: Image.asset(
               'assets/annimation.gif',
             ),
           ),
-          SizedBox(
-            height: 20.0,
-          ),
-          Text(
-            'Name : Mufassal Hussain\n Reg#: FA17-BCS-049',
-            style: TextStyle(
-              fontSize: 30.0,
-              color: Colors.white,
-              fontFamily: "Satisfy",
+          Expanded(
+            child: Text(
+              'Name : Mufassal Hussain\n Reg#: FA17-BCS-049',
+              style: TextStyle(fontSize: 20.0, color: Colors.red),
+              textAlign: TextAlign.center,
             ),
-            textAlign: TextAlign.center,
           ),
         ],
       )),

@@ -4,6 +4,8 @@ import 'package:flutter/services.dart';
 import 'package:crud_php/home.dart';
 import 'package:crud_php/addoreditpage.dart';
 
+import 'contacts.dart';
+
 class mainhome extends StatefulWidget {
   @override
   _mainhomeState createState() => _mainhomeState();
@@ -168,7 +170,7 @@ class NavDrawer extends StatelessWidget {
             decoration: BoxDecoration(
                 color: Colors.blue,
                 image: DecorationImage(
-                    fit: BoxFit.contain, image: AssetImage('images/view.png'))),
+                    fit: BoxFit.contain, image: AssetImage('assets/view.png'))),
           ),
           ListTile(
             leading: Icon(Icons.home),
@@ -199,7 +201,7 @@ class NavDrawer extends StatelessWidget {
             title: Text('Contact Us'),
             onTap: () => {
               Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => Add())),
+                  context, MaterialPageRoute(builder: (context) => aboutus())),
             },
           ),
         ],
