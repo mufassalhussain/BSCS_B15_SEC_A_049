@@ -54,6 +54,7 @@ flutter:
     - assets/view.png
     - assets/annimation.gif
     - assets/Mufassalprofile.png
+    - assets/download.png
       #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

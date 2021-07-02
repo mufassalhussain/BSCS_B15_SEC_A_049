@@ -10,16 +10,6 @@ class splashscreen extends StatefulWidget {
 }
 
 class _splashscreenState extends State<splashscreen> {
-  @override
-  void initState() {
-    super.initState();
-    Timer(Duration(seconds: 5), () {
-      Navigator.of(context).pushReplacement(MaterialPageRoute(
-        builder: (context) => mainhome(),
-      ));
-    });
-  }
-
   // added test yourself
   // and made the text to align at center
   @override

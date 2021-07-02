@@ -1,4 +1,6 @@
+import 'package:crud_php/home.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:http/http.dart' as http;
 import 'package:crud_php/main.dart';
 
@@ -85,13 +87,21 @@ class _AddState extends State<Add> {
         title: Text(
           'Add Data in MY SQL',
         ),
-
-        // leading: IconButton(
-        //  icon: Icon(Icons.menu),
-        //onPressed: () {
-        // NavDrawer();
-        //},
-        // ),
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => mainhome()));
+          },
+        ),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.exit_to_app),
+            onPressed: () {
+              SystemNavigator.pop();
+            },
+          ),
+        ],
         flexibleSpace: Container(
           decoration: BoxDecoration(
             gradient: LinearGradient(

@@ -114,11 +114,27 @@ class _mainhomeState extends State<mainhome> {
         appBar: AppBar(
           toolbarHeight: 70.0,
           centerTitle: true,
-          title: Text(
-            'PHP CRUD BY MUFASSAL ',
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15.0),
+          title: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              SizedBox(
+                height: 15.0,
+              ),
+              Image.asset(
+                'assets/download.png',
+                fit: BoxFit.contain,
+                height: 40.0,
+                width: 40.0,
+              ),
+              Text(
+                'PHP CRUD BY MUFASSAL',
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15.0),
+              ),
+              Container(
+                padding: const EdgeInsets.all(8.0),
+              ),
+            ],
           ),
-
           // leading: IconButton(
           //  icon: Icon(Icons.menu),
           //onPressed: () {
@@ -127,8 +143,10 @@ class _mainhomeState extends State<mainhome> {
           // ),
           actions: <Widget>[
             IconButton(
-              icon: Icon(Icons.notifications),
-              onPressed: () {},
+              icon: Icon(Icons.exit_to_app),
+              onPressed: () {
+                SystemNavigator.pop();
+              },
             ),
           ],
           flexibleSpace: Container(
@@ -170,7 +188,8 @@ class NavDrawer extends StatelessWidget {
             decoration: BoxDecoration(
                 color: Colors.blue,
                 image: DecorationImage(
-                    fit: BoxFit.contain, image: AssetImage('assets/view.png'))),
+                    fit: BoxFit.contain,
+                    image: AssetImage('assets/download.png'))),
           ),
           ListTile(
             leading: Icon(Icons.home),

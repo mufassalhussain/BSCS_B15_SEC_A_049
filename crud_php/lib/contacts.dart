@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:crud_php/home.dart';
+import 'package:flutter/services.dart';
 
 class aboutus extends StatefulWidget {
   @override
@@ -27,6 +28,14 @@ class _aboutusState extends State<aboutus> {
         // NavDrawer();
         //},
         // ),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.exit_to_app),
+            onPressed: () {
+              SystemNavigator.pop();
+            },
+          ),
+        ],
         flexibleSpace: Container(
           decoration: BoxDecoration(
             gradient: LinearGradient(
