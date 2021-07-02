@@ -2,41 +2,67 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:crud_php/main.dart';
 
-class AddEditPage extends StatefulWidget {
+void edit() {}
+
+class Add extends StatefulWidget {
   final List list;
   final int index;
-  AddEditPage({this.list, this.index});
+  Add({this.list, this.index});
   @override
-  _AddEditPageState createState() => _AddEditPageState();
+  _AddState createState() => _AddState();
 }
 
-class _AddEditPageState extends State<AddEditPage> {
+class _AddState extends State<Add> {
   TextEditingController firstName = TextEditingController();
   TextEditingController lastName = TextEditingController();
   TextEditingController phone = TextEditingController();
   TextEditingController address = TextEditingController();
 
   bool editMode = false;
-
   addUpdateData() {
     if (editMode) {
-      var url = Uri.parse('https://mufihosting.000webhostapp.com/edit.php');
-      http.post(url, body: {
-        'id': widget.list[widget.index]['id'],
-        'firstname': firstName.text,
-        'lastname': lastName.text,
-        'phone': phone.text,
-        'address': address.text,
-      });
+      edit();
     } else {
-      var url = Uri.parse('https://mufihosting.000webhostapp.com/add.php');
-      http.post(url, body: {
-        'firstname': firstName.text,
-        'lastname': lastName.text,
-        'phone': phone.text,
-        'address': address.text,
-      });
+      add();
     }
+  }
+
+  void edit() {
+    var url = Uri.parse('https://mufihosting.000webhostapp.com/edit.php');
+    http.post(url, body: {
+      'id': widget.list[widget.index]['id'],
+      'firstname': firstName.text,
+      'lastname': lastName.text,
+      'phone': phone.text,
+      'address': address.text,
+    });
+  }
+
+  void add() {
+    var url = Uri.parse('https://mufihosting.000webhostapp.com/add.php');
+    http.post(url, body: {
+      'firstname': firstName.text,
+      'lastname': lastName.text,
+      'phone': phone.text,
+      'address': address.text,
+    });
+  }
+
+  Padding pad(String name, TextEditingController cons) {
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: TextField(
+        controller: cons,
+        decoration: InputDecoration(
+          labelText: name,
+          hintStyle: TextStyle(
+            fontSize: 16,
+            color: Colors.black,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+      ),
+    );
   }
 
   @override
@@ -55,48 +81,33 @@ class _AddEditPageState extends State<AddEditPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.purple,
-        title: Text(editMode ? 'Update' : 'Add Data'),
+        centerTitle: true,
+        title: Text(
+          'Add Data in MY SQL',
+        ),
+
+        // leading: IconButton(
+        //  icon: Icon(Icons.menu),
+        //onPressed: () {
+        // NavDrawer();
+        //},
+        // ),
+        flexibleSpace: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.centerLeft,
+              end: Alignment.centerRight,
+              colors: [Colors.red, Colors.purple],
+            ),
+          ),
+        ),
       ),
       body: ListView(
         children: <Widget>[
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: TextField(
-              controller: firstName,
-              decoration: InputDecoration(
-                labelText: 'First Name',
-              ),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: TextField(
-              controller: lastName,
-              decoration: InputDecoration(
-                labelText: 'Last Name',
-              ),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: TextField(
-              controller: phone,
-              decoration: InputDecoration(
-                labelText: 'Phone',
-              ),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: TextField(
-              controller: address,
-              decoration: InputDecoration(
-                // focusColor: Colors.purple,
-                labelText: 'Address',
-              ),
-            ),
-          ),
+          pad('First Name', firstName),
+          pad('Last Name', lastName),
+          pad('Phone', phone),
+          pad('Address', address),
           Padding(
             padding: EdgeInsets.all(8),
             child: RaisedButton(
@@ -108,12 +119,12 @@ class _AddEditPageState extends State<AddEditPage> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => MyHomePage(),
+                    builder: (context) => Home(),
                   ),
                 );
                 debugPrint('Clicked RaisedButton Button');
               },
-              color: Colors.purple,
+              color: Colors.red,
               child: Text(
                 editMode ? 'Update' : 'Save',
                 style: TextStyle(color: Colors.white),

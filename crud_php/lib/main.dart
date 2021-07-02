@@ -9,6 +9,13 @@ void main() {
   runApp(MyApp());
 }
 
+Future getData() async {
+  var url = Uri.parse('https://mufihosting.000webhostapp.com/read.php');
+  var response = await http.get(url);
+
+  return json.decode(response.body);
+}
+
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
@@ -19,24 +26,17 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(),
+      home: Home(),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
+class Home extends StatefulWidget {
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _HomeState createState() => _HomeState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
-  Future getData() async {
-    var url = Uri.parse('https://mufihosting.000webhostapp.com/read.php');
-    var response = await http.get(url);
-
-    return json.decode(response.body);
-  }
-
+class _HomeState extends State<Home> {
   @override
   void initState() {
     super.initState();
@@ -46,20 +46,37 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Php Mysql Crud'),
-        backgroundColor: Colors.purple,
+        centerTitle: true,
+        title: Text(
+          'Mufassal PHP MYSQL CRUD',
+        ),
+
+        // leading: IconButton(
+        //  icon: Icon(Icons.menu),
+        //onPressed: () {
+        // NavDrawer();
+        //},
+        // ),
+        flexibleSpace: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.centerLeft,
+              end: Alignment.centerRight,
+              colors: [Colors.red, Colors.purple],
+            ),
+          ),
+        ),
       ),
       floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.add),
-        backgroundColor: Colors.purple,
+        child: Icon(Icons.add_chart),
+        backgroundColor: Colors.red,
         onPressed: () {
           Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => AddEditPage(),
+              builder: (context) => Add(),
             ),
           );
-          debugPrint('Clicked FloatingActionButton Button');
         },
       ),
       body: FutureBuilder(
@@ -73,24 +90,29 @@ class _MyHomePageState extends State<MyHomePage> {
                     List list = snapshot.data;
                     return ListTile(
                       leading: GestureDetector(
-                        child: Icon(Icons.edit),
+                        child: Icon(
+                          Icons.edit,
+                          color: Colors.red,
+                        ),
                         onTap: () {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => AddEditPage(
+                              builder: (context) => Add(
                                 list: list,
                                 index: index,
                               ),
                             ),
                           );
-                          debugPrint('Edit Clicked');
                         },
                       ),
                       title: Text(list[index]['firstname']),
                       subtitle: Text(list[index]['phone']),
                       trailing: GestureDetector(
-                        child: Icon(Icons.delete),
+                        child: Icon(
+                          Icons.delete,
+                          color: Colors.red,
+                        ),
                         onTap: () {
                           setState(() {
                             var url = Uri.parse(
@@ -104,7 +126,14 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                     );
                   })
-              : CircularProgressIndicator();
+              : Padding(
+                  padding: const EdgeInsets.all(9.0),
+                  child: LinearProgressIndicator(
+                    backgroundColor: Colors.white,
+                    valueColor: AlwaysStoppedAnimation(Colors.deepPurpleAccent),
+                    minHeight: 1.8,
+                  ),
+                );
         },
       ),
     );
