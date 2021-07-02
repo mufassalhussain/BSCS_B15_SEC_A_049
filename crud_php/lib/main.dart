@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:crud_php/splash.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:crud_php/addoreditpage.dart';
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: Home(),
+      home: splashscreen(),
     );
   }
 }

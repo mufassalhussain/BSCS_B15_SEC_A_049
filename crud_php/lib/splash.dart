@@ -55,7 +55,7 @@ class _splashscreenState extends State<splashscreen> {
           ),
           Expanded(),
           Expanded(
-            child: Image.asset('images/65ba488626025cff82f091336fbf94bb.gif'),
+            child: Image.asset('assets/annimation.gif'),
           ),
           Expanded(),
           SizedBox(

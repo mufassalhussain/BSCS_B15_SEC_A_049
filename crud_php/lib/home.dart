@@ -11,8 +11,8 @@ class mainhome extends StatefulWidget {
 
 class _mainhomeState extends State<mainhome> {
   List<String> images = [
-    "images/easy.png",
-    "images/hard.png",
+    "assets/add.png",
+    "assets/view.png",
   ];
 
   List<String> des = [
@@ -157,8 +157,8 @@ class _mainhomeState extends State<mainhome> {
         ),
         body: ListView(
           children: <Widget>[
-            customcard("Simple Level", images[0], des[0]),
-            customcard("Hard Level", images[1], des[1]),
+            customcard("Add Data", images[0], des[0]),
+            customcard("Read Data", images[1], des[1]),
           ],
         ),
       ),
