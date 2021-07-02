@@ -112,27 +112,11 @@ class _mainhomeState extends State<mainhome> {
         appBar: AppBar(
           toolbarHeight: 70.0,
           centerTitle: true,
-          title: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              SizedBox(
-                height: 15.0,
-              ),
-              Image.asset(
-                'images/calculator--v2.png',
-                fit: BoxFit.contain,
-                height: 40.0,
-                width: 40.0,
-              ),
-              Text(
-                'Mufi\'s Calculator',
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15.0),
-              ),
-              Container(
-                padding: const EdgeInsets.all(8.0),
-              ),
-            ],
+          title: Text(
+            'PHP CRUD BY MUFASSAL ',
+            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15.0),
           ),
+
           // leading: IconButton(
           //  icon: Icon(Icons.menu),
           //onPressed: () {

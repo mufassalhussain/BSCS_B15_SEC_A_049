@@ -1,5 +1,5 @@
 import 'dart:async';
-import 'package:crud_php/main.dart';
+//import 'package:crud_php/main.dart';
 import 'package:flutter/material.dart';
 import 'package:crud_php/home.dart';
 
@@ -24,7 +24,7 @@ class _splashscreenState extends State<splashscreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.amberAccent,
+      backgroundColor: Colors.purple,
       body: Center(
           child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -36,10 +36,10 @@ class _splashscreenState extends State<splashscreen> {
             ),
           ),
           Text(
-            'Welcome to CRUD PHPMYSQL APP',
+            'Welcome to CRUD PHP MYSQL APP',
             style: TextStyle(
               fontSize: 30.0,
-              color: Colors.red,
+              color: Colors.white,
               fontFamily: "Satisfy",
             ),
             textAlign: TextAlign.center,
@@ -53,11 +53,9 @@ class _splashscreenState extends State<splashscreen> {
           SizedBox(
             height: 20.0,
           ),
-          Expanded(),
           Expanded(
             child: Image.asset('assets/annimation.gif'),
           ),
-          Expanded(),
           SizedBox(
             height: 20.0,
           ),
@@ -71,7 +69,7 @@ class _splashscreenState extends State<splashscreen> {
             'Name : Mufassal Hussain\n Reg#: FA17-BCS-049',
             style: TextStyle(
               fontSize: 30.0,
-              color: Colors.red,
+              color: Colors.white,
               fontFamily: "Satisfy",
             ),
             textAlign: TextAlign.center,
