@@ -211,6 +211,14 @@ class NavDrawer extends StatelessWidget {
                   context, MaterialPageRoute(builder: (context) => Add())),
             },
           ),
+          ListTile(
+            leading: Icon(Icons.question_answer_outlined),
+            title: Text('Contact Us'),
+            onTap: () => {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => Add())),
+            },
+          ),
         ],
       ),
     );
